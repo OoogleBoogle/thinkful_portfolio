@@ -3,6 +3,19 @@ body {
   background-attachment: fixed;
 }
 
+
+/*======================================== Colors ========================*/
+
+.dark-primary-color    { background: #1976D2; }
+.default-primary-color { background: #2196F3; }
+.light-primary-color   { background: #BBDEFB; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #FFC107; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #727272; }
+.divider-color         { border-color: #B6B6B6; }
+
+
 /*================================ TYPOGRAPHY ============================*/
 
 @font-face {
@@ -122,25 +135,49 @@ p, .project h1 {
   position: absolute;
   top: 100vh;
   width: 100vw;
-  background-color: #fff;
+}
+
+.project {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  -o-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.work-examples > h1 {
+  text-align: center;
+  font-size: 2.3em;
 }
 
 .project h1 {
   text-align: center;
   font-size: 1.2em;
+  flex: 0 1 100%;
 }
 
-.left img {
-  float: left; 
-}
-
-.right img {
-  float: right;
+.project img {
+  max-width: 100vw;
+  max-height: 200px;
+  padding: 1em;
 }
 
 .project p {
-  font-size: 1em
+  font-size: 1em;
+  padding: 1em 4em;
 }
+
 
 /*====================================== MEDIA QUERIES =========================================*/
 
