@@ -120,7 +120,7 @@ body {
 .titlecontent {
   position: absolute;
   top: 100%;
-  animation: scroll 100s linear 2s infinite;
+  animation: scroll 95s linear 2s infinite;
 }
 
 @keyframes scroll {
@@ -137,6 +137,10 @@ body {
   width: 100vw;
   border-top: 8px solid yellow;
   background-color: black;
+}
+
+.project:nth-child(even) img {
+  order: 2;
 }
 
 .project {
