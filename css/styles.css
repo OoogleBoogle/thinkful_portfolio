@@ -107,7 +107,7 @@ p, .project h1 {
 .titlecontent {
   position: absolute;
   top: 100%;
-  animation: scroll 100s linear 2s infinite;
+  animation: scroll 95s linear 2s infinite;
 }
 
 @keyframes scroll {
