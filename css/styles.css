@@ -126,6 +126,10 @@ p, .project h1 {
   background-color: black;
 }
 
+.project:nth-child(even) img {
+  order: 2;
+}
+
 .project {
   display: -webkit-flex;
   display: -moz-flex;
