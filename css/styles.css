@@ -79,6 +79,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   z-index: 999;
+  /*transition: background-position .5s ease-out;*/
 }
 
 .titles {

@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   mg.onmousemove = function(e) {
-    pos.x = e.pageX;
-    pos.y = e.pageY;
+    pos.x = e.clientX;
+    pos.y = e.clientY;
   }
 
-  window.setInterval(mgMove, 100);
-  window.setInterval(bgMove, 100);
+  window.setInterval(mgMove, 50);
+  window.setInterval(bgMove, 50);
 
   function mgMove() {
     mg.style.backgroundPositionX = (pos.x / 90) + "px";
@@ -27,9 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
     body.style.backgroundPositionY = (pos.y / 200) + "px";
   }
 });
-
-
-
 
 function log() {
   console.log('hello');
