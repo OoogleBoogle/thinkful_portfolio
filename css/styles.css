@@ -69,6 +69,14 @@ p, .project h1 {
 
 /*=============================== STAR WARS(TM) SCROLL TEXT =========================*/
 
+#midground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: transparent url('../images/midground.svg') center repeat;
+  background-size: cover;
+}
+
 .titles {
   color: yellow;
   position: absolute;
@@ -176,7 +184,6 @@ p, .project h1 {
   margin: 1.3em auto;
   flex: 0 1 65%;
   align-self: center;
-  /*max-width: 38%;*/
 }
 
 /*================================= FOOTER ===========================*/
